@@ -1,0 +1,513 @@
+/* ===========================  
+   DELICIAS DE MI TIERRA  
+=========================== */  
+  
+/* RESET */  
+  
+*{  
+    margin:0;  
+    padding:0;  
+    box-sizing:border-box;  
+    scroll-behavior:smooth;  
+}  
+  
+/* BODY */  
+  
+body{  
+    font-family:Arial, Helvetica, sans-serif;  
+    background:#f8f5ef;  
+    color:#333;  
+    line-height:1.7;  
+}  
+  
+/* HEADER */  
+  
+header{  
+    background:#6d4c41;  
+    color:white;  
+    display:flex;  
+    justify-content:space-between;  
+    align-items:center;  
+    padding:20px 8%;  
+    position:sticky;  
+    top:0;  
+    z-index:1000;  
+    box-shadow:0 4px 10px rgba(0,0,0,.2);  
+}  
+  
+/* LOGO */  
+  
+.logo h1{  
+    font-size:34px;  
+    margin-bottom:5px;  
+}  
+  
+.logo p{  
+    font-size:18px;  
+    color:#f5deb3;  
+}  
+  
+/* MENÚ */  
+  
+nav ul{  
+    list-style:none;  
+    display:flex;  
+    align-items:center;  
+}  
+  
+nav ul li{  
+    position:relative;  
+}  
+  
+nav ul li a{  
+    color:white;  
+    text-decoration:none;  
+    padding:15px 20px;  
+    display:block;  
+    font-weight:bold;  
+    transition:.3s;  
+}  
+  
+nav ul li a:hover{
+    background:#A1887F;
+    border-radius:8px;
+}
+  
+/* SUBMENÚ */  
+  
+.submenu{  
+    display:none;  
+    position:absolute;  
+    background:#ffffff;  
+    min-width:220px;  
+    top:55px;  
+    left:0;  
+    border-radius:10px;  
+    overflow:hidden;  
+    box-shadow:0 5px 15px rgba(0,0,0,.25);  
+}  
+  
+.submenu li{  
+    width:100%;  
+}  
+  
+.submenu li a{  
+    color:#333;  
+    padding:14px;  
+}  
+  
+.submenu li a:hover{  
+    background:#f2f2f2;  
+}  
+  
+/* Mostrar submenú */  
+  
+.dropdown:hover .submenu{  
+    display:block;  
+}  
+  
+/* SECCIÓN INICIO */  
+  
+#inicio{  
+    padding:60px 10%;  
+    text-align:center;  
+}  
+  
+.inicio-contenido h2{  
+    font-size:42px;  
+    color:#6d4c41;  
+    margin-bottom:25px;  
+}  
+  
+.inicio-contenido p{  
+    max-width:950px;  
+    margin:auto;  
+    text-align:justify;  
+    font-size:20px;  
+}  
+  
+.inicio-contenido img{  
+    width:100%;  
+    max-width:1000px;  
+    margin-top:35px;  
+    border-radius:18px;  
+    box-shadow:0 8px 20px rgba(0,0,0,.25);  
+}  
+  
+/* INFORMACIÓN */  
+  
+.informacion{  
+    padding:60px 10%;  
+}  
+  
+.informacion h2{  
+    text-align:center;  
+    color:#6d4c41;  
+    font-size:34px;  
+    margin-bottom:20px;  
+}  
+  
+.informacion p{  
+    max-width:950px;  
+    margin:auto;  
+    text-align:justify;  
+    font-size:19px;  
+    line-height:1.9;  
+}  
+  
+/* ==========================================  
+   TARJETAS DEL MENÚ  
+========================================== */  
+  
+#desayunos,  
+#almuerzos,  
+#tardear,  
+#Postres,
+#bebidas,  
+#licores{  
+  
+    padding:70px 8%;  
+    background:#fff;  
+  
+}  
+  
+#desayunos h2,  
+#almuerzos h2,  
+#tardear h2,  
+#Postres h2,
+#bebidas h2,  
+#licores h2{  
+  
+    text-align:center;  
+    font-size:38px;  
+    color:#6d4c41;  
+    margin-bottom:45px;  
+  
+}  
+  
+/* CONTENEDOR */  
+  
+.contenedor-menu{  
+  
+    display:grid;  
+  
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));  
+  
+    gap:30px;  
+  
+}  
+  
+/* TARJETA */  
+  
+.tarjeta{  
+  
+    background:white;  
+  
+    border-radius:15px;  
+  
+    overflow:hidden;  
+  
+    box-shadow:0 8px 18px rgba(0,0,0,.15);  
+  
+    transition:.4s;  
+  
+}  
+  
+.tarjeta:hover{  
+  
+    transform:translateY(-10px);  
+  
+    box-shadow:0 15px 28px rgba(0,0,0,.25);  
+  
+}  
+  
+/* IMAGEN */  
+  
+.tarjeta img{  
+  
+    width:100%;  
+  
+    height:230px;  
+  
+    object-fit:cover;  
+  
+}  
+  
+/* NOMBRE DEL PLATO */  
+  
+.tarjeta h3{  
+  
+    text-align:center;  
+  
+    color:#6d4c41;  
+  
+    margin-top:18px;  
+  
+    font-size:24px;  
+  
+    cursor:pointer;  
+  
+    transition:.3s;  
+  
+}  
+  
+.tarjeta h3:hover{  
+  
+    color:#d2691e;  
+  
+}  
+  
+/* PRECIO */  
+  
+.precio{  
+  
+    text-align:center;  
+  
+    color:#0a8f3d;  
+  
+    font-size:23px;  
+  
+    font-weight:bold;  
+  
+    margin:15px 0;  
+  
+}  
+  
+/* DESCRIPCIÓN */  
+  
+.descripcion{  
+  
+    display:none;  
+  
+    margin:0 20px 20px;  
+  
+    text-align:justify;  
+  
+    color:#555;  
+  
+    font-size:17px;  
+  
+    line-height:1.7;  
+  
+}  
+  
+/* EFECTO CUANDO SE MUESTRA */  
+  
+.descripcion.activa{  
+  
+    display:block;  
+  
+    animation:aparecer .5s;  
+  
+}  
+  
+/* ANIMACIÓN */  
+  
+@keyframes aparecer{  
+  
+    from{  
+  
+        opacity:0;  
+  
+        transform:translateY(-15px);  
+  
+    }  
+  
+    to{  
+  
+        opacity:1;  
+  
+        transform:translateY(0);  
+  
+    }  
+  
+}  
+  
+/* ==========================================  
+   FOOTER  
+========================================== */  
+  
+footer{  
+  
+    background:#6d4c41;  
+  
+    color:white;  
+  
+    text-align:center;  
+  
+    padding:35px 20px;  
+  
+}  
+  
+footer h3{  
+  
+    font-size:28px;  
+  
+    margin-bottom:10px;  
+  
+}  
+  
+footer p{  
+  
+    font-size:17px;  
+  
+    margin:8px 0;  
+  
+}  
+  
+/* ==========================================  
+   RESPONSIVE  
+========================================== */  
+  
+@media(max-width:768px){  
+  
+header{  
+  
+    flex-direction:column;  
+  
+    text-align:center;  
+  
+}  
+  
+nav ul{  
+  
+    flex-direction:column;  
+  
+    margin-top:15px;  
+  
+}  
+  
+nav ul li{  
+  
+    width:100%;  
+  
+}  
+  
+nav ul li a{  
+  
+    padding:15px;  
+  
+}  
+  
+.submenu{  
+  
+    position:static;  
+  
+    width:100%;  
+  
+    box-shadow:none;  
+  
+}  
+  
+.inicio-contenido h2{  
+  
+    font-size:30px;  
+  
+}  
+  
+.inicio-contenido p{  
+  
+    font-size:17px;  
+  
+}  
+  
+.informacion h2{  
+  
+    font-size:28px;  
+  
+}  
+  
+.informacion p{  
+  
+    font-size:17px;  
+  
+}  
+  
+#desayunos h2,  
+#almuerzos h2,  
+#tardear h2,  
+#bebidas h2,  
+#licores h2{  
+  
+    font-size:30px;  
+  
+}  
+  
+.tarjeta img{  
+  
+    height:200px;  
+  
+}  
+  
+.codigoQR{  
+  
+    width:180px;  
+  
+    height:180px;  
+  
+}  
+  
+}  
+  
+/* ==========================================  
+   SCROLL PERSONALIZADO  
+========================================== */  
+  
+::-webkit-scrollbar{  
+  
+    width:10px;  
+  
+}  
+  
+::-webkit-scrollbar-track{  
+  
+    background:#f1f1f1;  
+  
+}  
+  
+::-webkit-scrollbar-thumb{  
+  
+    background:#8d6e63;  
+  
+    border-radius:10px;  
+  
+}  
+  
+::-webkit-scrollbar-thumb:hover{  
+  
+    background:#6d4c41;  
+  
+}
+
+.visitanos{
+    background:#f8f5f2;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.visitanos h2{
+    color:#6d4c41;
+    font-size:42px;
+    margin-bottom:30px;
+}
+
+.info-box{
+    max-width:650px;
+    margin:auto;
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+    text-align:left;
+}
+
+.info-box p{
+    font-size:20px;
+    line-height:1.8;
+    color:#444;
+    margin-bottom:20px;
+}
+
+.info-box strong{
+    color:#6d4c41;
+}
