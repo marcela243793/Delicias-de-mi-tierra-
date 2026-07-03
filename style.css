@@ -478,36 +478,3 @@ nav ul li a{
     background:#6d4c41;  
   
 }
-
-.visitanos{
-    background:#f8f5f2;
-    padding:60px 20px;
-    text-align:center;
-}
-
-.visitanos h2{
-    color:#6d4c41;
-    font-size:42px;
-    margin-bottom:30px;
-}
-
-.info-box{
-    max-width:650px;
-    margin:auto;
-    background:#fff;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 8px 25px rgba(0,0,0,.12);
-    text-align:left;
-}
-
-.info-box p{
-    font-size:20px;
-    line-height:1.8;
-    color:#444;
-    margin-bottom:20px;
-}
-
-.info-box strong{
-    color:#6d4c41;
-}
