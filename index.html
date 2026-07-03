@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicias de Mi Tierra</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+        <h1>🍽 Delicias de Mi Tierra</h1>
+        <p>El auténtico sabor que une a las familias</p>
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="#inicio">Inicio</a></li>
+
+            <li class="dropdown">
+
+                <a href="#">Menú ▼</a>
+
+                <ul class="submenu">
+
+                    <li><a href="#desayunos">Desayunos🧆</a></li>
+
+                    <li><a href="#almuerzos">Almuerzos🍲</a></li>
+
+     <li><a href="#tardear">Para Tardear🍔</a></li>
+
+<li><a href="#postres">Postres🍮</a></li>
+                    <li><a href="#bebidas">Bebidas🥤</a></li>
+
+                    <li><a href="#licores">Licores🍷</a></li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- ================= INICIO ================= -->
+
+<section id="inicio">
+
+    <div class="inicio-contenido">
+
+        <h2>Bienvenidos a Delicias de Mi Tierra</h2>
+
+        <p>
+
+            En <strong>Delicias de Mi Tierra</strong> nos apasiona ofrecer los
+            mejores sabores tradicionales acompañados de una excelente atención.
+            Nuestro restaurante reúne recetas típicas colombianas y platos
+            especiales preparados con ingredientes frescos y de alta calidad,
+            brindando una experiencia inolvidable para toda la familia.
+
+        </p>
+
+        <img src="Restaurante.jpg"
+        alt="Restaurante">
+
+    </div>
+
+</section>
+
+<!-- ================= HISTORIA ================= -->
+
+<section class="informacion">
+
+    <h2>Nuestra Historia</h2>
+
+    <p>
+
+        Delicias de Mi Tierra nació con el propósito de conservar las
+        tradiciones culinarias colombianas y compartirlas con todas las
+        personas que disfrutan de una buena comida. Desde nuestros inicios
+        hemos trabajado con dedicación para ofrecer platos preparados con
+        ingredientes frescos, recetas tradicionales y un ambiente familiar
+        donde cada visitante se sienta como en casa.
+
+    </p>
+
+</section>
+
+<!-- ================= MISIÓN ================= -->
+
+<section class="informacion">
+
+    <h2>Misión</h2>
+
+    <p>
+
+        Brindar experiencias gastronómicas de excelente calidad mediante
+        platos tradicionales, bebidas refrescantes y un servicio amable,
+        satisfaciendo las necesidades de nuestros clientes con responsabilidad,
+        higiene y compromiso.
+
+    </p>
+
+</section>
+
+<!-- ================= VISIÓN ================= -->
+
+<section class="informacion">
+
+    <h2>Visión</h2>
+
+    <p>
+
+        Ser un restaurante reconocido por la calidad de nuestros productos,
+        el excelente servicio y la conservación de los sabores típicos,
+        convirtiéndonos en una de las mejores opciones gastronómicas para
+        familias, turistas y visitantes.
+
+    </p>
+
+</section>
+
+<!-- ================= DESAYUNOS ================= -->
+
+<section id="desayunos">
+
+<h2>🍳 Desayunos</h2>
+
+<div class="contenedor-menu">
+    
+        <!-- DESAYUNO 1 -->
+    <div class="tarjeta">
+        <img src="imagen1.jpg" alt="Calentado Antioqueño">
+
+        <h3 onclick="mostrarInfo('info1')">Calentado Antioqueño</h3>
+
+        <p class="precio">$18.000</p>
+
+        <p id="info1" class="descripcion">
+            Preparado con arroz, frijoles, carne desmechada, huevo frito,
+            arepa y hogao tradicional.
+        </p>
+    </div>
+
+    <!-- DESAYUNO 2 -->
+    <div class="tarjeta">
+        <img src="imagen2.jpg" alt="Huevos Pericos">
+
+        <h3 onclick="mostrarInfo('info2')">Huevos Pericos con Arepa</h3>
+
+        <p class="precio">$10.000</p>
+
+        <p id="info2" class="descripcion">
+            Huevos revueltos con tomate y cebolla acompañados de arepa,
+            queso campesino y chocolate caliente.
+        </p>
+    </div>
+
+    <!-- DESAYUNO 3 -->
+    <div class="tarjeta">
+        <img src="imagen3.jpg" alt="Tamal">
+
+        <h3 onclick="mostrarInfo('info3')">Tamal Colombiano</h3>
+
+        <p class="precio">$12.000</p>
+
+        <p id="info3" class="descripcion">
+            Tamal elaborado con masa de maíz, pollo, cerdo, zanahoria,
+            arvejas y especias tradicionales.
+        </p>
+    </div>
+
+    <!-- DESAYUNO 4 -->
+    <div class="tarjeta">
+        <img src="imagen4.jpg" alt="Omelette">
+
+        <h3 onclick="mostrarInfo('info4')">Omelette Especial</h3>
+
+        <p class="precio">$15.000</p>
+
+        <p id="info4" class="descripcion">
+            Omelette relleno de jamón, queso mozzarella, tomate y cebollín.
+        </p>
+    </div>
+
+    <!-- DESAYUNO 5 -->
+    <div class="tarjeta">
+        <img src="imagen5.jpg" alt="Panqueques">
+
+        <h3 onclick="mostrarInfo('info5')">Panqueques con Frutas</h3>
+
+        <p class="precio">$10.000</p>
+
+        <p id="info5" class="descripcion">
+            Panqueques esponjosos acompañados de banano, fresa, miel y crema.
+        </p>
+    </div>
+
+    <!-- DESAYUNO 6 -->
+    <div class="tarjeta">
+        <img src="imagen6.jpg" alt="Waffles">
+
+        <h3 onclick="mostrarInfo('info6')">Waffles con Fresas</h3>
+
+        <p class="precio">$15.000</p>
+
+        <p id="info6" class="descripcion">
+            Deliciosos waffles servidos con fresas frescas, miel y crema batida.
+        </p>
+    </div>
+
+    <!-- DESAYUNO 7 -->
+    <div class="tarjeta">
+        <img src="imagen7.jpg" alt="Desayuno Continental">
+
+        <h3 onclick="mostrarInfo('info7')">Desayuno Continental</h3>
+
+        <p class="precio">$18.000</p>
+
+        <p id="info7" class="descripcion">
+            Incluye pan, mantequilla, mermelada, fruta fresca, café y jugo natural.
+        </p>
+    </div>
+
+</div>
+
+</section>
+
+<!-- ================= ALMUERZOS ================= -->
+
+<section id="almuerzos">
+
+    <h2>🍛 Almuerzos</h2>
+
+    <div class="contenedor-menu">
+
+        <!-- ALMUERZO 1 -->
+        <div class="tarjeta">
+            <img src="Bandeja.jpg" alt="Bandeja Paisa">
+
+            <h3 onclick="mostrarInfo('almuerzo1')">Bandeja Paisa</h3>
+
+            <p class="precio">$35.000</p>
+
+            <p id="almuerzo1" class="descripcion">
+                Frijoles, arroz blanco, carne molida, chicharrón, huevo frito,
+                chorizo, aguacate, arepa y plátano maduro.
+            </p>
+        </div>
+
+        <!-- ALMUERZO 2 -->
+        <div class="tarjeta">
+            <img src="Pollo.jpg" alt="Pollo a la Plancha">
+
+            <h3 onclick="mostrarInfo('almuerzo2')">Pollo a la Plancha</h3>
+
+            <p class="precio">$18.000</p>
+
+            <p id="almuerzo2" class="descripcion">
+                Pechuga de pollo a la plancha acompañada de arroz, ensalada
+                fresca, papas a la francesa y tajadas de plátano.
+            </p>
+        </div>
+
+        <!-- ALMUERZO 3 -->
+        <div class="tarjeta">
+            <img src="Pescado.jpg" alt="Pescado Frito">
+
+            <h3 onclick="mostrarInfo('almuerzo3')">Pescado Frito</h3>
+
+            <p class="precio">$16.000</p>
+
+            <p id="almuerzo3" class="descripcion">
+                Mojarra frita acompañada de arroz con coco, patacones,
+                ensalada y limón.
+            </p>
+        </div>
+
+        <!-- ALMUERZO 4 -->
+        <div class="tarjeta">
+            <img src="lomo.jpg" alt="Lomo de Res">
+
+            <h3 onclick="mostrarInfo('almuerzo4')">Lomo de Res en Salsa de Champiñones</h3>
+
+            <p class="precio">$28.000</p>
+
+            <p id="almuerzo4" class="descripcion">
+                Lomo de res bañado en salsa de champiñones con puré de papa
+                y vegetales salteados.
+            </p>
+        </div>
+
+        <!-- ALMUERZO 5 -->
+        <div class="tarjeta">
+            <img src="Ajiaco.jpg" alt="Ajiaco">
+
+            <h3 onclick="mostrarInfo('almuerzo5')">Ajiaco Santafereño</h3>
+
+            <p class="precio">$30.000</p>
+
+            <p id="almuerzo5" class="descripcion">
+                Sopa tradicional preparada con pollo, tres clases de papa,
+                mazorca, guascas, alcaparras y crema de leche.
+            </p>
+        </div>
+
+        <!-- ALMUERZO 6 -->
+        <div class="tarjeta">
+            <img src="Cerdo.jpg" alt="Lomo de Cerdo">
+
+            <h3 onclick="mostrarInfo('almuerzo6')">Lomo de Cerdo</h3>
+
+            <p class="precio">$22.000</p>
+
+            <p id="almuerzo6" class="descripcion">
+                Lomo de cerdo a la parrilla acompañado de arroz, vegetales
+                salteados y papas rústicas.
+            </p>
+        </div>
+
+        <!-- ALMUERZO 7 -->
+        <div class="tarjeta">
+            <img src="Espaguetis.jpg" alt="Espaguetis">
+
+            <h3 onclick="mostrarInfo('almuerzo7')">Espaguetis a la Boloñesa</h3>
+
+            <p class="precio">$27.000</p>
+
+            <p id="almuerzo7" class="descripcion">
+                Pasta en salsa boloñesa preparada con carne molida,
+                tomate, queso parmesano y albahaca.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PARA TARDEAR ================= -->
+
+<section id="tardear">
+
+    <h2>🥪 Para Tardear</h2>
+
+    <div class="contenedor-menu">
+
+        <!-- OPCIÓN 1 -->
+        <div class="tarjeta">
+            <img src="Sandwich.jpg" alt="Sándwich Club">
+
+            <h3 onclick="mostrarInfo('tarde1')">Sándwich Club</h3>
+
+            <p class="precio">$22.000</p>
+
+            <p id="tarde1" class="descripcion">
+                Preparado con pan artesanal, pollo, jamón, queso, tomate,
+                lechuga, tocineta y salsa especial de la casa.
+            </p>
+        </div>
+
+        <!-- OPCIÓN 2 -->
+        <div class="tarjeta">
+            <img src="Hamburguesa.jpg" alt="Hamburguesa Especial">
+
+            <h3 onclick="mostrarInfo('tarde2')">Hamburguesa Especial</h3>
+
+            <p class="precio">$23.000</p>
+
+            <p id="tarde2" class="descripcion">
+                Carne de res, queso cheddar, tocineta, lechuga,
+                tomate, cebolla caramelizada y papas francesas.
+            </p>
+        </div>
+
+        <!-- OPCIÓN 3 -->
+        <div class="tarjeta">
+            <img src="Pizza.jpg" alt="Pizza Personal">
+
+            <h3 onclick="mostrarInfo('tarde3')">Pizza Personal</h3>
+
+            <p class="precio">$13.000</p>
+
+            <p id="tarde3" class="descripcion">
+                Pizza con salsa de tomate, queso mozzarella,
+                jamón, pepperoni y orégano.
+            </p>
+        </div>
+
+        <!-- OPCIÓN 4 -->
+        <div class="tarjeta">
+            <img src="Wrap.jpg" alt="Wrap de Pollo">
+
+            <h3 onclick="mostrarInfo('tarde4')">Wrap de Pollo</h3>
+
+            <p class="precio">$12.000</p>
+
+            <p id="tarde4" class="descripcion">
+                Tortilla de trigo rellena de pollo, queso,
+                vegetales frescos y salsa de ajo.
+            </p>
+        </div>
+
+        <!-- OPCIÓN 5 -->
+        <div class="tarjeta">
+            <img src="Empanadas.jpg" alt="Empanadas">
+
+            <h3 onclick="mostrarInfo('tarde5')">Empanadas Colombianas</h3>
+
+            <p class="precio">$2.000</p>
+
+            <p id="tarde5" class="descripcion">
+                Crujientes empanadas rellenas de carne,
+                papa y acompañadas de ají casero.
+            </p>
+        </div>
+
+        <!-- OPCIÓN 6 -->
+        <div class="tarjeta">
+    <img src="Ensalada fruta.jpg" alt="Ensalada de Frutas">
+    
+    <h3 onclick="mostrarInfo('tarde6')">Ensalada de fruta</h3>
+    
+
+         <p class="precio">$15.000</p>
+         
+         <p id="tarde6" class="descripción">
+        </div>
+
+        <!-- OPCIÓN 7 -->
+        <div class="tarjeta">
+            <img src="Deditos.jpg" alt="Deditos de Queso">
+
+            <h3 onclick="mostrarInfo('tarde7')">Deditos de Queso</h3>
+
+        <p class="precio">$ 1.500 - 17.000</p>
+
+            <p id="tarde7" class="descripcion">
+   Paquetes o unidad de Deliciosos deditos de queso acompañados 
+                con salsa de la casa.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= POSTRES 
+================= -->
+
+   <section id="Postres">
+
+    <h2> 🍰 Postres </h2>
+    
+ <div class="contenedor-menu">
+
+        <!-- POSTRE 1 -->
+        <div class="tarjeta">
+
+   <img src="Postre.jpg" alt="Torta Tres Leches">
+
+            <h3 onclick="mostrarInfo('postre1')">
+                Torta Tres Leches
+            </h3>
+
+      <p class="precio">$12.000 - 45.000</p>
+
+      <p id="postre1" class="descripcion">
+   Delicioso bizcocho bañado en tres tipos de leche, cubierto con crema chantillí y un toque de canela. Su textura suave y cremosa lo convierte en uno de los postres favoritos de nuestros clientes.
+            </p>
+
+        </div>
+
+        <!-- POSTRE 2 -->
+        <div class="tarjeta">
+
+            <img src="Postre2.jpg" alt="Flan de Caramelo">
+
+            <h3 onclick="mostrarInfo('postre2')">
+                Flan de Caramelo
+            </h3>
+
+            <p class="precio">$10.000</p>
+
+            <p id="postre2" class="descripcion">
+                Delicado flan preparado con leche, huevos y vainilla, cubierto con una suave salsa de caramelo artesanal que le aporta un sabor dulce y una textura muy cremosa.
+            </p>
+
+        </div>
+
+        <!-- POSTRE 3 -->
+        <div class="tarjeta">
+
+            <img src="Postre3.jpg" alt="Arroz con Leche">
+
+            <h3 onclick="mostrarInfo('postre3')">
+                Arroz con Leche
+            </h3>
+
+        <p class="precio">$5.000 - 15.000</p>
+
+       <p id="postre3" class="descripcion">
+  Hay porción para llevar del delicioso y Tradicional postre preparado con arroz, leche, azúcar, canela y un toque de vainilla. Una receta casera que conserva el auténtico sabor de la tradición colombiana.
+            </p>
+
+        </div>
+
+        <!-- POSTRE 4 -->
+        <div class="tarjeta">
+
+            <img src="Postre4.jpg" alt="Cheesecake de Fresa">
+
+            <h3 onclick="mostrarInfo('postre4')">
+                Cheesecake de Fresa
+            </h3>
+
+            <p class="precio">$14.000</p>
+
+            <p id="postre4" class="descripcion">
+                Suave cheesecake elaborado con queso crema sobre una base de galleta crocante, decorado con una deliciosa salsa de fresas naturales que realza su sabor.
+            </p>
+
+        </div>
+     
+             <!-- POSTRE 5 -->
+        <div class="tarjeta">
+
+            <img src="Postre5.jpg" alt="Brownie con Helado">
+
+            <h3 onclick="mostrarInfo('postre5')">
+                Brownie con Helado
+            </h3>
+
+            <p class="precio">$15.000</p>
+
+            <p id="postre5" class="descripcion">
+                Delicioso brownie de chocolate con interior suave, acompañado de una bola de helado de vainilla y bañado con salsa de chocolate.
+            </p>
+
+        </div>
+
+        <!-- POSTRE 6 -->
+        <div class="tarjeta">
+
+            <img src="Postre6.jpg" alt="Helado Artesanal">
+
+            <h3 onclick="mostrarInfo('postre6')">
+                Helado Artesanal
+            </h3>
+
+            <p class="precio">$8.000</p>
+
+            <p id="postre6" class="descripcion">
+                Helado elaborado de manera artesanal con ingredientes frescos. Disponible en sabores como vainilla, chocolate, fresa, maracuyá y coco.
+            </p>
+
+        </div>
+
+        <!-- POSTRE 7 -->
+        <div class="tarjeta">
+
+            <img src="Postre7.png" alt="Mousse de Maracuyá">
+
+            <h3 onclick="mostrarInfo('postre7')">
+                Mousse de Maracuyá
+            </h3>
+
+            <p class="precio">$12.000</p>
+
+            <p id="postre7" class="descripcion">
+                Suave y cremoso mousse preparado con pulpa natural de maracuyá, crema de leche y leche condensada. Decorado con salsa de maracuyá para un equilibrio perfecto entre dulzura y frescura.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>  
+        
+
+<!-- ================= BEBIDAS ================= -->
+
+<section id="bebidas">
+
+    <h2>🥤 Bebidas</h2>
+
+    <div class="contenedor-menu">
+
+        <!-- BEBIDA 1 -->
+        <div class="tarjeta">
+     <img src="Jugo1.jpg" alt="Jugo de Naranja">
+
+<h3 onclick="mostrarInfo('bebida1')">Jugo de Naranja</h3>
+            <p class="precio">$2.000</p>
+            
+            <p id="bebida1" class="descripcion">
+       </div>
+
+        <!-- BEBIDA 2 -->
+        <div class="tarjeta">
+     <img src="Jugo2.jpg" alt="Jugo de Maracuyá">
+
+<h3 onclick="mostrarInfo('bebida2')">Jugo de Maracuyá</h3>
+            <p class="precio">$4.000</p>
+            
+            <p id="bebida2" class="descripcion">
+        </div>
+
+        <!-- BEBIDA 3 -->
+        <div class="tarjeta">
+            <img src="Jugo3.jpg" alt="Batido de Fresa">
+
+            <h3 onclick="mostrarInfo('bebida3')">Batido de Fresa</h3>
+
+            <p class="precio">$10.000</p>
+
+            <p id="bebida3" class="descripcion">
+                Batido cremoso elaborado con fresas frescas y leche.
+            </p>
+        </div>
+
+        <!-- BEBIDA 4 -->
+        <div class="tarjeta">
+            <img src="Jugo4.jpg" alt="Limonada">
+
+   <h3 onclick="mostrarInfo('bebida4')">Limonada</h3>
+   
+            <p class="precio">$3.000</p>
+            
+            <p id="bebida4" class="descripcion">
+        </div>
+
+        <!-- BEBIDA 5 -->
+        <div class="tarjeta">
+            <img src="Jugo5.jpg" alt="Capuccino">
+
+            <h3 onclick="mostrarInfo('bebida5')">Capuccino</h3>
+
+            <p class="precio">$9.500</p>
+
+            <p id="bebida5" class="descripcion">
+                Café espresso con leche espumada y un toque de canela.
+            </p>
+        </div>
+
+        <!-- BEBIDA 6 -->
+        <div class="tarjeta">
+            <img src="Jugo6.jpg" alt="Café Frío">
+
+            <h3 onclick="mostrarInfo('bebida6')">Café Frío</h3>
+
+            <p class="precio">$7.5000</p>
+
+            <p id="bebida6" class="descripcion">
+                Café colombiano servido con hielo y un ligero toque de crema.
+            </p>
+        </div>
+
+        <!-- BEBIDA 7 -->
+        <div class="tarjeta">
+            <img src="Jugo7.jpg" alt="Gaseosa">
+
+            <h3 onclick="mostrarInfo('bebida7')">Gaseosa</h3>
+
+            <p class="precio">$3.000</p>
+
+            <p id="bebida7" class="descripcion">
+                Bebida gaseosa disponible en diferentes sabores.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= LICORES ================= -->
+
+<section id="licores">
+
+    <h2>🍷 Licores</h2>
+
+    <div class="contenedor-menu">
+
+        <!-- LICOR 1 -->
+        <div class="tarjeta">
+            <img src="Vino1.jpg" alt="Vino Tinto">
+
+            <h3 onclick="mostrarInfo('licor1')">Vino Tinto</h3>
+
+            <p class="precio">$18.000</p>
+
+            <p id="licor1" class="descripcion">
+                Copa de vino tinto de excelente calidad, ideal para acompañar carnes y pastas.
+            </p>
+        </div>
+
+        <!-- LICOR 2 -->
+        <div class="tarjeta">
+       <img src="Vino2.jpg" alt="Vino Blanco">
+
+           <h3 onclick="mostrarInfo('licor2')">Vino Blanco</h3>
+           
+            <p class="precio">$18.000</p>
+            
+            <p id="licor2" class="descripcion">
+        </div>
+
+        <!-- LICOR 3 -->
+        <div class="tarjeta">
+            <img src="Mojito.jpg" alt="Mojito">
+
+            <h3 onclick="mostrarInfo('licor3')">Mojito</h3>
+
+            <p class="precio">$22.000</p>
+
+            <p id="licor3" class="descripcion">
+                Preparado con ron, limón, hierbabuena, azúcar y agua con gas.
+            </p>
+        </div>
+
+        <!-- LICOR 4 -->
+        <div class="tarjeta">
+            <img src="Piña.jpg" alt="Piña Colada">
+
+            <h3 onclick="mostrarInfo('licor4')">Piña Colada</h3>
+
+            <p class="precio">$24.000</p>
+
+            <p id="licor4" class="descripcion">
+                Cóctel elaborado con crema de coco, jugo de piña y ron.
+            </p>
+        </div>
+
+        <!-- LICOR 5 -->
+        <div class="tarjeta">
+            <img src="Wisky.jpg" alt="Whisky">
+
+       <h3 onclick="mostrarInfo('licor5')">Wisky</h3>
+       
+            <p class="precio">$28.000</p>
+            
+           <p id="licor5" class="descripción">
+               </p>
+        </div>
+
+        <!-- LICOR 6 -->
+        <div class="tarjeta">
+            <img src="Cerveza.jpg" alt="Cerveza">
+
+            <h3 onclick="mostrarInfo('licor6')">Cerveza</h3>
+
+            <p class="precio">$6.000</p>
+
+            <p id="licor6" class="descripcion">
+                Cerveza nacional bien fría, disponible en varias presentaciones.
+            </p>
+        </div>
+
+        <!-- LICOR 7 -->
+        <div class="tarjeta">
+            <img src="Git tonic.jpg" alt="Gin Tonic">
+
+            <h3 onclick="mostrarInfo('licor7')">Gin Tonic</h3>
+
+            <p class="precio">$25.000</p>
+
+            <p id="licor7" class="descripcion">
+                Ginebra premium acompañada de agua tónica y rodajas de limón.
+            </p>
+        </div>
+
+      <section class="visitanos">
+    <h2>📍 Visítanos</h2>
+
+    <div class="info-box">
+        <p>¡Será un placer atenderte!</p>
+  <p>Estamos listos para recibir tus pedidos.</p>
+
+        <p><strong>📍 Dirección:</strong><br>
+        Cra. 8 #22-36K, Montería, Córdoba</p>
+
+        <p><strong>🕒 Horario:</strong><br>
+        Lunes a Domingo<br>
+        7:00 a. m. – 10:00 p. m.</p>
+
+        <p><strong>💳 Métodos de pago:</strong><br>
+        Efectivo • Nequi • Transferencia bancaria</p>
+    </div>
+</section>
+
+    </div>
+</section>
+    </div>
+
+</section>
+
+<!-- ================= PIE DE PÁGINA ================= -->
+
+<footer>
+
+    <h3>🍽 Delicias de Mi Tierra</h3>
+
+    <p>El auténtico sabor que une a las familias.</p>
+
+  <p>© Creado por la estudiante de sistemas.</p>
+<p>Inis Marcela Paternina Lazaro.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
