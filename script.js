@@ -21,14 +21,6 @@ if (descripcion.style.display === "block") {
 
 }
 
-// Mensaje de bienvenida
-
-window.onload = function () {
-
-alert("🍽️ ¡Bienvenido a Delicias de Mi Tierra! Esperamos que disfrutes nuestro menú.");
-
-};
-
 // Resaltar la tarjeta al hacer clic
 
 const tarjetas = document.querySelectorAll(".tarjeta");
